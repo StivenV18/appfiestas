@@ -2,18 +2,17 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
+        //Para usar una clase creo un objeto
+    Empleado objeto=new Empleado();
 
-        //EN EL MAIN LLAMO A MIS CLASES
-        //EN EL MAIN CREO LOS OBJETOS DE MIS CLASES
-        //EN EL MAIN CREO UNA INSTANCIA DE MI CLASE
-        //EN EL MAIN LE SACO COPIA A MIS CLASES Y CREO OBJETOS
-        Invitado objetoDeClaseInvitado=new Invitado();
-        Invitado objeto2=new Invitado(333,true,"Juan",10000);
+    //Utilizar el objeto para acceder a un atributo
+        objeto.nombre="EL PEPE";
+        // Utilizar el objeto para acceder a un objeto
 
+        objeto.saludar("EL PEPE");
+        //Salida por consola
+        System.out.println(objeto.saludar("EL PEPE"));
 
-        //obtener el valor de los atributos
-        System.out.println(objetoDeClaseInvitado.nombre);
-        System.out.println(objeto2.nombre);
-
+        int sumatoria = objeto.sumar(5, 3);
     }
 }
